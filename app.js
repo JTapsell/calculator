@@ -1,18 +1,51 @@
+var entries = [];
+var total = 0;
+temp = "";
+
+function displayVal(){
+  console.log(total);
+}
+
+function addVal(a, b){
+  total = a + b;
+  displayVal();
+}
+
+function subVal(a, b){
+  total = a - b;
+  displayVal();
+}
+
+function timesVal(a, b){
+  total = a * b;
+  displayVal();
+}
+
+function divVal(a, b){
+  total = a / b;
+  displayVal();
+}
+
+function allClearDisplay(){
+  total = 0;
+}
+
+function clearEntry(){
+  temp = "";
+}
+
+/*
 // create entries array for numbers to be added
 // create base total
 // set click function for number input and operator functions
 // create function that pushes end value
-
-
-
-
-
 var entries = [];
 var total = 0;
-
 var temp = '';
-$("button").on('click', function() {
- 	var val = $(this).text();
+
+
+//$("button").on('click', function() {
+ 	//var val = $(this).text();
 
   // Got a number, add to temp
   if (!isNaN(val) || val === '.') {
@@ -76,4 +109,4 @@ $("button").on('click', function() {
     entries.push(val);
     temp = '';
   }
-});
+}); */
